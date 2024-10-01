@@ -13,8 +13,9 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'About Me', link: '/about' },
-      { text: 'Gallery', link: '/markdown-examples' },
+      { text: 'Gallery', link: '/gallery' },
       { text: 'Contact', link: '/contact' },
+      { text: 'Special Gift 🎁', link: '/happy-birthday' },
     ],
 
     sidebar: [
