@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>yourname.</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Comfortaa:700"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <div id="loading">
+      <div id="spinner"></div>
+    </div>
+    <div id="magnify">
+        <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
+        <div id="img_here"></div>
+    </div>
+    <div id="particles-js"></div>
+    <div id="box">
+      <div
+        class="box1 onlywide animated bounceOutLeft"
+        style="animation-delay: 1.7s"
+      ></div>
+      <div
+        class="box2 onlywide animated bounceOutLeft"
+        style="animation-delay: 1.8s"
+      ></div>
+      <div
+        class="box2 onlywide animated bounceOutLeft"
+        style="animation-delay: 1.9s"
+      ></div>
+      <div
+        class="box2 animated bounceOutRight"
+        style="animation-delay: 1.9s"
+      ></div>
+      <div
+        class="box2 onlywide animated bounceOutRight"
+        style="animation-delay: 1.8s"
+      ></div>
+      <div
+        class="box2 onlywide animated bounceOutRight"
+        style="animation-delay: 1.7s"
+      ></div>
+    </div>
+    <a
+      id="about"
+      onclick="showabout()"
+      class="animated fadeIn"
+      style="animation-delay: 2.2s"
+      >about</a
+    >
+    <a
+      id="work"
+      onclick="showwork()"
+      class="animated fadeIn"
+      style="animation-delay: 2.2s"
+      >gallery</a
+    >
+    <a
+      id="contact"
+      onclick="showcontact()"
+      class="animated fadeIn"
+      style="animation-delay: 2.2s"
+      >contact</a
+    >
+    <div id="middle" class="animated slideInDown" style="animation-delay: 2s">
+      <h1>Kate.</h1>
+      <h2>Aesthete / Traveler / Photographer / Human</h2>
+      <div id="menu">
+        <a onclick="showabout()">about</a>
+        <a onclick="showwork()">gallery</a>
+        <a onclick="showcontact()">contact</a>
+      </div>
+      <table>
+        <tr>
+          <td class="animated zoomIn" style="animation-delay: 2.2s">
+            <a class="social" href="https://www.facebook.com/ngan.truong.372019"
+              ><i class="fab fa-facebook"></i
+            ></a>
+          </td>
+          <td class="animated zoomIn" style="animation-delay: 2.4s">
+            <a class="social" href="https://www.instagram.com/kate.theaesthete/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </td>
+          <td class="animated zoomIn" style="animation-delay: 2.6s">
+            <a class="social" href="https://www.threads.net/@_ttn510_"
+              ><i class="fab fa-threads"></i
+            ></a>
+          </td>
+          <td class="animated zoomIn" style="animation-delay: 2.8s">
+            <a class="social" href="https://www.tiktok.com/@__kate510__"
+              ><i class="fab fa-tiktok"></i
+            ></a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="work_container" class="container">
+      <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
+      <h1>gallery.</h1>
+      <section>
+        <h2>Just Kate</h2>
+        <p>Random thoughts and some aesthetic moments you might love...</p>
+        <div id="used">
+          <div><i class="fas"></i>&nbsp;Coffee Lover</div>
+          <div><i class="fas"></i>&nbsp;Photographer</div>
+          <div><i class="fas"></i>&nbsp;KOL</div>
+        </div>
+        <button class="btn_one" onclick="showphotos()">My Photos</button>
+        <button class="btn_one" onclick="redirectToSpotify()">
+          My Spotify Playlist <i class="fa-brands fa-spotify"></i>
+        </button>
+        <button class="btn_one">My Blog</button>
+      </section>
+    </div>
+    <div id="about_container" class="container">
+      <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+      <h1>about.</h1>
+      <section>
+        <h2>about me</h2>
+        <p>
+          👩‍✈️ Certified flight attendant with 4 years of experience in
+          international flights. Eager to support VietJet Air in creating a
+          pleasurable flight experience for the passengers. Proven track record
+          handling emergency situations. Received SkyWings Airlines' Employee of
+          the Year award in 2022 for first aid and excellent service to all
+          passengers.
+        </p>
+        <p>
+          ✈️ Beyond my customer service experience, I also dive deep into my
+          creative passions as a die-hard fan of the Art and Design aesthetic
+          genre, an avid film photographer, and an entrepreneurial florist. I
+          believe in the power of creativity - whether it's comfying my
+          customers, capturing moments on film, or crafting verses.
+        </p>
+      </section>
+      <section>
+        <h2>skills</h2>
+        <p>
+          📣 Outstanding communication skills in Vietnamese, English, Korean and
+          German.
+        </p>
+        <p>💪 Ability to work under pressure in challenging environments.</p>
+        <p>⚠️ Knowledge of emergency procedures and safety protocols.</p>
+        <p>
+          💻 Proficient in MS Office Suite and basic computer troubleshooting.
+        </p>
+        <p>
+          🤍 Excellent customer service capacity with exemplary attention to
+          detial.
+        </p>
+        <p>📆 Exceptional organizational and multitasking abilities.</p>
+      </section>
+    </div>
+    <div id="contact_container" class="container">
+      <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+      <h1>contact.</h1>
+      <section>
+        <h2>contact me</h2>
+        <!-- <p> -->
+        <form>
+          <input type="text" placeholder="name" required />
+          <input type="email" placeholder="email" required /><br />
+          <textarea placeholder="your message" required rows="5"></textarea
+          ><br />
+          <button class="btn_one">send</button>
+        </form>
+        <!-- </p> -->
+      </section>
+    </div>
+    <div id="photos_container" class="photo-container">
+      <div onclick="closephotos()"><i class="fas fa-angle-right"></i></div>
+      <h1>photos.</h1>
+      <section>
+        <div id="photos">
+          <img onclick="magnify($(this).attr('src'))" src="./kate/anh_1.jpg" />
+          <img onclick="magnify($(this).attr('src'))" src="./kate/Scene_1.jpg" />
+          <img onclick="magnify($(this).attr('src'))" src="./kate/anh_loai 1.jpg" />
+          <img onclick="magnify($(this).attr('src'))" src="./kate/anh_2.jpg" />
+          <img onclick="magnify($(this).attr('src'))" src="./kate/anh_loai 2.jpg" />
+
+          <img onclick="magnify($(this).attr('src'))" src="./kate/anh_3.jpg" />
+          <img onclick="magnify($(this).attr('src'))" src="./kate/anh_4.jpg" />
+          <img onclick="magnify($(this).attr('src'))" src="./kate/anh_loai 3.jpg" />
+
+          <img onclick="magnify($(this).attr('src'))" src="./kate/Scene_2.jpg" />
+
+          <img onclick="magnify($(this).attr('src'))" src="./kate/anh_5.jpg" />
+          <img onclick="magnify($(this).attr('src'))" src="./kate/anh_loai 4.jpg" />
+
+          <img onclick="magnify($(this).attr('src'))" src="./kate/anh_6.jpg" />
+          <img onclick="magnify($(this).attr('src'))" src="./kate/anh_7.jpg" />
+          <img onclick="magnify($(this).attr('src'))" src="./kate/anh_loai 5.jpg" />
+
+          <img onclick="magnify($(this).attr('src'))" src="./kate/Scene_3.jpg" />
+          <img onclick="magnify($(this).attr('src'))" src="./kate/anh_8.jpg" />
+          <img onclick="magnify($(this).attr('src'))" src="./kate/anh_loai 6.jpg" />
+
+          <img onclick="magnify($(this).attr('src'))" src="./kate/anh_9.jpg" />
+          <img onclick="magnify($(this).attr('src'))" src="./kate/Scene_4.jpg" />
+          <img onclick="magnify($(this).attr('src'))" src="./kate/anh_10.jpg" />
+          <img onclick="magnify($(this).attr('src'))" src="./kate/anh_loai 7.jpg" />
+
+          <img onclick="magnify($(this).attr('src'))" src="./kate/anh_11.jpg" />
+          <img onclick="magnify($(this).attr('src'))" src="./kate/Scene_5.jpg" />
+          <img onclick="magnify($(this).attr('src'))" src="./kate/anh_12.jpg" />
+          <img onclick="magnify($(this).attr('src'))" src="./kate/anh_loai 8.jpg" />
+
+          <img onclick="magnify($(this).attr('src'))" src="./kate/anh_13.jpg" />
+          <img onclick="magnify($(this).attr('src'))" src="./kate/Scene_6.jpg" />
+          <img onclick="magnify($(this).attr('src'))" src="./kate/anh_14.jpg" />
+          <img onclick="magnify($(this).attr('src'))" src="./kate/anh_loai 9.jpg" />
+
+        </div>
+      </section>
+    </div>
+    <div id="footer">
+      made on earth by a human <br /><br />
+      <a href="https://www.linkedin.com/in/huy-pham-308853207/"> huypq44 </a>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
