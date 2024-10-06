@@ -401,7 +401,7 @@ body {
   background: #ff4d6d;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 50, 50, 0.8);
+  background: #ff4d6d;
 }
 ::selection {
   color: #fff;
